@@ -9,6 +9,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <title>Needy Site</title>
+    <style type="text/css">
+     li:hover {
+        font-size: 1.1em;
+        font-weight: bold;
+     }
+     .hi{
+      width:100%;
+      height:600px;
+      background-image: url("what2.jpg");
+      background-size: cover; 
+      background-repeat: no-repeat;
+     }
+     .pos{
+      position: absolute;
+      top: 300px;
+      width: 100%;
+      
+      text-align: center;
+      color: white;
+     }
+        
+     
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -23,17 +46,20 @@
           <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/about.html">About</a>
+          <a class="nav-link active" href="about.html">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Activities</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Services
+           Info
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="volounteer.html">Volounteers</a></li>
+            <li><a class="dropdown-item" href="volunteer.html">Volunteers</a></li>
             <li><a class="dropdown-item" href="orphanages.html">Orphanages</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="contact.html">Contact</a></li>
@@ -44,66 +70,121 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Search</button>
       </form>
+       <li class="nav-item">
+        <a href="donate.html"><button class="btn btn-warning text-light" type="submit">Donate</button></a>
+      </li>
     </div>
   </div>
 </nav>
 
-<div class="container">
-  <div class="container marketing">
+
 
     <!-- Three columns of text below the carousel -->
 
     <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette d-flex justify-content-center align-items-center">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">What is our Project? <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="https://source.unsplash.com/400x400/?nature,water">
-      </div>
+    <div class="hi">
+      <div class="pos">
+      <h1 style="text-align: center; font-size:80px">Mission</h1>
+      <p><Strong>Our mission is to provide basic human services and advocacy for those in need in our community.</Strong></p>
+     </div>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette d-flex justify-content-center align-items-center">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Why is our Project? <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="https://source.unsplash.com/400x400/?trash,garbage">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette d-flex justify-content-center align-items-center">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">How can we acheive our main? <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="https://source.unsplash.com/400x400/?helping,mountains">
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
 
+  
+<div class="container my-4">
+  <h2><center>Our Team</center></h2>
+  <br>
+<div class="row mb-2">
+    <div class="col-md-4">
+      <div class="row g-0 ">
+       <!-- <div class="col p-4 d-flex flex-column position-static">-->
+         <div class="card p-4" style="width: 18rem;">
+          <img class="card-img-top" src="yash.jpg" width="100" height="250">
+          <div class="card-body">
+            <p class="card-text">Yeshwanth</p>
+            <p class="card-text">+91-8907632221</p>
+          </div>
+        <!--</div>-->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row g-0 ">
+        <!--<div class="col p-4 d-flex flex-column position-static">-->
+         <div class="card p-4" style="width: 18rem;">
+          <img class="card-img-top" src="udhay.jpg" width="100" height="250">
+          <div class="card-body">
+            <p class="card-text">Uday Kumar.M</p>
+            <p class="card-text">+91-9878976754</p>
+          </div>
+        </div>
+        <!--</div>-->
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row g-0 ">
+        <!--<div class="col p-4 d-flex flex-column position-static">-->
+         <div class="card p-4" style="width: 18rem;">
+          <img class="card-img-top" src="gopi.jpg" width="100" height="250">
+          <div class="card-body">
+            <p class="card-text">Gopi Krishna Bollu</p>
+            <p class="card-text">+91-98421214043</p>
+          </div>
+       <!-- </div>-->
+        </div>
+      </div>
+    </div>
   </div>
-
-
+</div>
+<div class="container my-4">
+<div class="row mb-2">
+    <div class="col-md-4">
+      <div class="row g-0 ">
+       <!-- <div class="col p-4 d-flex flex-column position-static">-->
+         <div class="card p-4" style="width: 18rem;">
+          <img class="card-img-top" src="ravinder.jpg" width="100" height="250">
+          <div class="card-body">
+            <p class="card-text">Ravinder G</p>
+            <p class="card-text">+91-9084121211</p>
+          </div>
+        <!--</div>-->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row g-0 ">
+        <!--<div class="col p-4 d-flex flex-column position-static">-->
+         <div class="card p-4" style="width: 18rem;">
+          <img class="card-img-top" src="suresh.jpg" width="100" height="250">
+          <div class="card-body">
+            <p class="card-text">Suresh L</p>
+            <p class="card-text">+91-8962412332</p>
+          </div>
+        </div>
+        <!--</div>-->
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row g-0 ">
+        <!--<div class="col p-4 d-flex flex-column position-static">-->
+         <div class="card p-4" style="width: 18rem;">
+          <img class="card-img-top" src="venu.jpg" width="100" height="250">
+          <div class="card-body">
+            <p class="card-text">Venu B</p>
+            <p class="card-text">+91-9084512323</p>
+          </div>
+       <!-- </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2021–2021 Needy Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+
+<footer class="container-fluid bg-dark text-light p-2">
+    <p class="float-end"><a href="#" style="text-decoration: none; color: white;">Back to top</a></p>
+    <p>© 2021–2021 Needy Company, Inc. ·<Strong> Ph no: </Strong> 95550559559 <Strong> Email: </Strong> needy@gmail.com <a href="#" style="text-decoration: none; color: white;">Privacy   </a> · <a href="#" style="text-decoration: none; color: white;">  Terms</a></p>
   </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 

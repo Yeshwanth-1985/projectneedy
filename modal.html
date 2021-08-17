@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style type="text/css">
+     li:hover {
+        font-size: 1.1em;
+        font-weight: bold;
+     }
+     .myorange {
+      background-color: #FF5733;
+     }
+    </style>
+    <title>Needy Site</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="logo.jpg" width="50" height="auto"> Feed the Needy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item hiii">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Activities</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Info
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="volounteer.html">Volounteers</a></li>
+            <li><a class="dropdown-item" href="orphanages.html">Orphanages</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+      <li class="nav-item">
+        <button class="btn myorange text-light openbt" type="submit" data-bs-toggle="modal" data-bs-target="#myModal">SignUP</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-light text-dark openbt" onclick="togglePopup('popup-1')">Login</button>
+      </li>
+      <li class="nav-item">
+        <button class="btn btn-success" type="submit" onclick="togglePopup('popup-2')">Hiii</button>
+      </li>
+    </div>
+  </div>
+</nav>
+
+<div class="mypopup" id="popup-1">
+  <div class="myoverlay"></div>
+  <div class="mycontent">
+    <div class="myclose-btn tt" onclick="togglePopup('popup-1')">x</div>
+    <h2>Event 2nfebwke Pics:</h2>
+    <br>
+    <div id="carouselExampleCaptions2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="temp4.jpg" class="mysizes" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pic3.jpg" class="mysizes" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="temp4.jpg" class="mysizes" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pic3.jpg" class="mysizes" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+</div>
+
+<div class="mypopup" id="popup-2">
+  <div class="myoverlay"></div>
+  <div class="mycontent">
+    <div class="myclose-btn" onclick="togglePopup('popup-2')">×</div>
+    <h2>Event 1 Pics:</h2>
+    <br>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="temp4.jpg" class="mysizes" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pic3.jpg" class="mysizes" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="temp4.jpg" class="mysizes" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pic3.jpg" class="mysizes" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+</div>
+
+<footer class="container-fluid bg-dark fixed-bottom text-light p-2">
+    <p class="float-end"><a href="#" style="text-decoration: none; color: white;">Back to top</a></p>
+    <p>© 2021–2021 Needy Company, Inc. ·<Strong> Ph no: </Strong> 95550559559 <Strong> Email: </Strong> needy@gmail.com <a href="#" style="text-decoration: none; color: white;">Privacy   </a> · <a href="#" style="text-decoration: none; color: white;">  Terms</a></p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      function togglePopup(popup){
+  document.getElementById(popup).classList.toggle("active");
+}
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
